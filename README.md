@@ -52,6 +52,7 @@ However, for production the credentials should be set as environment variables.
 
 
 ## Application Structure
+```
 
 ├── app
 │   ├── controllers
@@ -93,6 +94,7 @@ However, for production the credentials should be set as environment variables.
     ├── testcases          // Testcases organised by module names.
     └── test.js            // Test file.
 
+```
 
 ## Code
 
@@ -100,6 +102,7 @@ We're using semi-colons and comma-last. No rhyme or reason; and some of the hapi
 
 ## .env Configuration
 Create .env file on root foler and define following property
+```
 
 DEBUGGER=false        // enable disable debug mode.
 NODE_ENV=development  //Node environment development/production
@@ -117,6 +120,7 @@ MAIL_PORT=465  // Mail Port
 DATABASE_URL=mongodb://localhost:27017/hapiness  //Mongo database url
 SWAGGER_HOST=localhost:8000  // Host Url for Swagger.
 
+```
 ## Running the server locally
 
  - Install  `node`, `npm`
@@ -240,7 +244,7 @@ const handler = (request, h) => {
     .code(201)
 }
 ```
-For complete upgrade guide from hapi16 to hapi 17 Refer below link:-
+For complete upgrade guide to upgrade hapi16 to hapi 17 Refer below link:-
 
 https://futurestud.io/tutorials/hapi-v17-upgrade-guide-your-move-to-async-await
 
