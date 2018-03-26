@@ -53,7 +53,6 @@ However, for production the credentials should be set as environment variables.
 
 ## Application Structure
 ```
-
 ├── app
 │   ├── controllers
 │   │   ├── api            // Controllers are organised by module names for rest api 
@@ -102,8 +101,8 @@ We're using semi-colons and comma-last. No rhyme or reason; and some of the hapi
 
 ## .env Configuration
 Create .env file on root foler and define following property
-```
 
+```
 DEBUGGER=false        // enable disable debug mode.
 NODE_ENV=development  //Node environment development/production
 PORT=8000            // Server Port
@@ -121,6 +120,7 @@ DATABASE_URL=mongodb://localhost:27017/hapiness  //Mongo database url
 SWAGGER_HOST=localhost:8000  // Host Url for Swagger.
 
 ```
+
 ## Running the server locally
 
  - Install  `node`, `npm`
@@ -138,8 +138,10 @@ $ gulp
 The servers should be running at: <br/> [localhost:8000](https://localhost:8000)
 
 ## Running the server in Docker Container
+
 #Prerequisite For Docker Configuration
-Docker and Docker compose must be install on the system.
+
+Docker and docker compose must be install on the system.
 
 #Steps to run app in docker container :-
   1. Go to project folder
@@ -154,13 +156,14 @@ Docker and Docker compose must be install on the system.
 - Run these commands
 
 ```sh
-# Run the node server
+# Test the server
 $ npm test
 
 ```
-## Hapiness Upgrade guide.
+## Hapiness Upgrade Guide.
 
 #Create Plugins and Their Exports
+
 To comply with the new structure, update your plugins to use a named export plugin that provides an object containing all the information. At least the register function that takes the server and options object.
 
 #hapi v16
